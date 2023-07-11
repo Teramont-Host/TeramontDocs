@@ -67,7 +67,7 @@ const config = {
         title: 'Teramont Docs',
         logo: {
           alt: 'Teramont Logo',
-          src: 'img/logo.png',
+          src: 'https://new-cdn.teramont.net/u/6iT048.ico',
         },
         items: [
           {
