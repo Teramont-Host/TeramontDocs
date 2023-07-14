@@ -1,6 +1,3 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -43,7 +40,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Teramont Docs',
@@ -86,11 +82,11 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/vFFjEgGqd8',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/TeramontHost',
               },
             ],
           },
@@ -98,13 +94,17 @@ const config = {
             title: 'Más',
             items: [
               {
+                label: 'Tienda',
+                href: 'https://teramont.net',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/teramontdotnet/TeramontDocs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Teramont Docs.`,
+        copyright: `TeramontDocs ${new Date().getFullYear()}.`,
       },
       prism: {
         theme: lightCodeTheme,
