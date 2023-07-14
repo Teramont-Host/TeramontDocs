@@ -1,47 +1,33 @@
 ---
-sidebar_position: 1
+id: inicio
+title: Introducción
+slug: /
+hide_title: true
+hide_table_of_contents: true
+sidebar_position: 0
+sidebar_label: Documentación
+image: https://billing.teramont.net/templates/lagom2/assets/img/logo/logo_big.222289724.png
 ---
+<div class="text--center">
+<img src="https://teramont.net/assets/img/teramontlogo.png" alt="logo" height="50%" width="50%"/>
+<h1>Documentación</h1>
+</div>
 
-# Tutorial Intro
+La mayoría de los artículos de esta documentación han sido creados por nuestra comunidad. Tú también puedes ayudarnos. 
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## Introducción
 
-## Getting Started
+¡Bienvenido a Teramont Docs! Aquí encontrarás información útil sobre nuestros servicios y panel, servidores en funcionamiento, preguntas más frecuentes y mucho más. Para facilitar la navegación, hemos creado una lista de algunos de los documentos más utilizados a continuación.
 
-Get started by **creating a new site**.
+A lo largo de toda la documentación verás sintaxis comunes:
+- `<codigo>` - Esto es un 'codigo', que se supone que debes cambiar según tus necesidades.
+- [Textos de color Verde](.) y enlaces que conducen a otras guías o sitios web externos.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Para facilitar la navegación, puedes utilizar la función de "búsqueda". Sólo tienes que hacer clic en el botón de la esquina superior derecha o utilizar la tecla de acceso rápido `CTRL+K`.
 
-### What you'll need
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## ¿No encontraste lo que buscabas?
 
-## Generate a new site
+Si no encuentras respuesta a tus preguntas, no dudes en ponerte en contacto con nosotros!
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+La forma más rápida es unirte a nuestro [Servidor de Discord](https://discord.gg/vFFjEgGqd8) y preguntar en `#community-support`.
