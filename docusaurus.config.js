@@ -1,6 +1,3 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -8,28 +5,19 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Teramont Docs',
   tagline: 'Resumen de la documentación',
+  title: 'Docs',
+  tagline: 'Docs de Teramont',
   favicon: 'https://new-cdn.teramont.net/u/6iT048.ico',
-
-  // Set the production url of your site here
   url: 'https://docs.teramont.net',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Teramont', // Usually your GitHub org/user name.
-  projectName: 'Teramont Docs', // Usually your repo name.
-
-  onBrokenLinks: 'throw',
+  organizationName: 'Teramont',
+  projectName: 'Teramont Docs',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -38,19 +26,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog:false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -61,7 +42,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Teramont Docs',
@@ -71,12 +51,15 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            href: 'https://teramont.net',
+            label: 'Tienda',
+            position: 'right',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://discord.gg/vFFjEgGqd8',
+            label: 'Discord',
+            position: 'right',
+          },
           {
             href: 'https://github.com/teramontdotnet/TeramontDocs',
             label: 'GitHub',
@@ -91,34 +74,30 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introducción',
+                to: '/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Redes',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/vFFjEgGqd8',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/TeramontHost',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Más',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Tienda',
+                href: 'https://teramont.net',
               },
               {
                 label: 'GitHub',
@@ -128,6 +107,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Teramont Host. Built with Docusaurus.`,
+        copyright: `TeramontDocs ${new Date().getFullYear()}.`,
       },
       prism: {
         theme: lightCodeTheme,
