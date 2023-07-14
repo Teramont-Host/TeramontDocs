@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Teramont Docs',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Resumen de la documentación',
   favicon: 'https://new-cdn.teramont.net/u/6iT048.ico',
 
   // Set the production url of your site here
@@ -78,7 +78,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/teramontdotnet/TeramontDocs',
             label: 'GitHub',
             position: 'right',
           },
@@ -122,12 +122,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/teramontdotnet/TeramontDocs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Teramont Host. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
