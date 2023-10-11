@@ -150,7 +150,7 @@ const config = {
             items: [
               {
                 label: 'Registro de cambios TCP',
-                to: '/tcp-upadtes',
+                to: '/tcp-updates',
               },
               {
                 label: 'GitHub',
