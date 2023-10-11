@@ -67,18 +67,24 @@ const config = {
         title: 'Teramont Docs',
         logo: {
           alt: 'Teramont Docs',
-          src: 'img/logo.png',
+          src: 'img/favicon.ico',
         },
         items: [
           {
             type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            position: 'left',
+            label: 'Docs',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tutoriales',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/tcp-updates', label: 'TCP Updates', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Teramont-Host/TeramontDocs',
             label: 'GitHub',
             position: 'right',
           },
