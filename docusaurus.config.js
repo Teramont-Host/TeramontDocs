@@ -98,7 +98,7 @@ const config = {
           {to: '/blog', label: 'Tutoriales', position: 'left'},
           {to: '/tcp-updates', label: 'Registro de cambios TCP', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Teramont-Host/TeramontDocs',
             label: 'GitHub',
             position: 'right',
           },
@@ -108,46 +108,58 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentación',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Documentación',
+                to: '/docs',
+              },
+              {
+                label: 'Tutoriales',
+                to: '/docs',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Comunidad',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://teramont.net/discord',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://teramont.net/twitter',
+              },
+              {
+                label: 'Facebook',
+                href: 'https://teramont.net/facebook',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://teramont.net/instagram',
+              },
+              {
+                label: 'TikTok',
+                href: 'https://teramont.net/tiktok',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Otros',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Registro de cambios TCP',
+                to: '/tcp-upadtes',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Teramont-Host/TeramontDocs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Teramont Host Documentation. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
