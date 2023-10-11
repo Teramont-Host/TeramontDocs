@@ -1,26 +1,26 @@
-# 👋 ¡Bienvenido(a)!
-¡Esta es la documentación mantenida por la comunidad para [Teramont Host](https://www.teramont.net)!
+# 👋 ¡Saludos!
+Te presentamos la documentación de [Teramont Host](https://www.teramont.net), un esfuerzo colectivo de nuestra comunidad.
 
-# 📁 Cómo Contribuir
+# 📁 Participa y Contribuye
 
 <details>
 
 <summary>
 
-## 📚 A la Documentación
+## 📚 En la Documentación
 
 </summary>
 
-Puedes ayudar a contribuir a la documentación de Teramont Host de dos maneras:
+Si deseas aportar a la documentación de Teramont Host, aquí te mostramos dos formas de hacerlo:
 
-### Opción #1:
+### Opción #1: Contribución Directa
 
-Puedes contribuir directamente a la documentación haciendo lo siguiente:
+Sigue estos pasos para contribuir directamente:
 
-1. Crea un fork del [Repositorio de GitHub](https://github.com/Teramont-Host/TeramontDocs)
-2. Opcionalmente, crea una nueva rama, como `feature/mis-cambios` para facilitar la fusión de cambios.
-3. Realiza las ediciones en tu fork de este repositorio.
-   Ten en cuenta que hay un formato de documento al crear nuevas páginas, consulta más abajo para obtener detalles.
-4. Crea una solicitud de pull para agregar los cambios al repositorio.
+1. Haz un fork del [Repositorio en GitHub](https://github.com/Teramont-Host/TeramontDocs).
+2. Como buena práctica, te sugerimos crear una nueva rama, por ejemplo `feature/mis-aportes`, esto facilitará la integración de tus cambios.
+3. Realiza las modificaciones en tu versión del repositorio.
+   Si vas a añadir nuevas páginas, recuerda seguir el formato establecido. Más detalles a continuación.
+4. Envía una solicitud de pull para que tus cambios sean considerados en el repositorio principal.
 
-**Nota:** Si estás agregando nuevas páginas, asegúrate de agregarlas en [`sidebars.js`](/sidebars.js) (ubicado en la raíz del repositorio).
+**Nota Importante:** Al añadir nuevas páginas, no olvides incluirlas en el archivo [`sidebars.js`](/sidebars.js), que se encuentra en la raíz del repositorio.
