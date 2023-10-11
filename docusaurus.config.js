@@ -65,8 +65,18 @@ const config = {
               id: 'tcp-updates',
               path: 'tcp-updates',
               routeBasePath: 'tcp-updates',
+              editUrl: 'https://github.com/Teramont-Host/TeramontDocs/blob/main',
           },
       ],
+      [
+        '@docusaurus/plugin-content-blog',
+        {
+            id: 'tutorials',
+            path: 'tutorials',
+            routeBasePath: 'tutorials',
+            editUrl: 'https://github.com/Teramont-Host/TeramontDocs/blob/main',
+        },
+    ],
       // [
       //     '@docusaurus/plugin-content-blog',
       //     {
