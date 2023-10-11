@@ -1,41 +1,26 @@
-# Website
+# 👋 ¡Bienvenido(a)!
+¡Esta es la documentación mantenida por la comunidad para [Teramont Host](https://www.teramont.net)!
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# 📁 Cómo Contribuir
 
-### Installation
+<details>
 
-```
-$ yarn
-```
+<summary>
 
-### Local Development
+## 📚 A la Documentación
 
-```
-$ yarn start
-```
+</summary>
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Puedes ayudar a contribuir a la documentación de Teramont Host de dos maneras:
 
-### Build
+### Opción #1:
 
-```
-$ yarn build
-```
+Puedes contribuir directamente a la documentación haciendo lo siguiente:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+1. Crea un fork del [Repositorio de GitHub](https://github.com/Teramont-Host/TeramontDocs)
+2. Opcionalmente, crea una nueva rama, como `feature/mis-cambios` para facilitar la fusión de cambios.
+3. Realiza las ediciones en tu fork de este repositorio.
+   Ten en cuenta que hay un formato de documento al crear nuevas páginas, consulta más abajo para obtener detalles.
+4. Crea una solicitud de pull para agregar los cambios al repositorio.
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+**Nota:** Si estás agregando nuevas páginas, asegúrate de agregarlas en [`sidebars.js`](/sidebars.js) (ubicado en la raíz del repositorio).
