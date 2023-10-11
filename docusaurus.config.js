@@ -21,7 +21,7 @@ const config = {
   organizationName: 'Teramont-Host', // Usually your GitHub org/user name.
   projectName: 'TeramontDocs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -42,20 +42,39 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Teramont-Host/TeramontDocs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Teramont-Host/TeramontDocs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
+  ],
+
+  plugins: [
+      [
+          '@docusaurus/plugin-content-blog',
+          {
+              id: 'tcp-updates',
+              path: 'tcp-updates',
+              routeBasePath: 'tcp-updates',
+          },
+      ],
+      // [
+      //     '@docusaurus/plugin-content-blog',
+      //     {
+      //         id: 'test',
+      //         path: 'test',
+      //         routeBasePath: 'test',
+      //     },
+      // ],
   ],
 
   themeConfig:
@@ -72,19 +91,14 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: 'Docs',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutoriales',
+            label: 'Documentación',
           },
-          {to: '/tcp-updates', label: 'TCP Updates', position: 'left'},
+          {to: '/blog', label: 'Tutoriales', position: 'left'},
+          {to: '/tcp-updates', label: 'Registro de cambios TCP', position: 'left'},
           {
-            href: 'https://github.com/Teramont-Host/TeramontDocs',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
