@@ -5,7 +5,7 @@
 /build
 
 # SSL
-/sll
+/ssl
 
 # Generated files
 .docusaurus
