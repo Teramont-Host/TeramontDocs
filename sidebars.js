@@ -22,6 +22,34 @@ const sidebars = {
         'getting_started/overview'
     ],
     },
+    {
+      type: 'category',
+      label: 'Teramont Control Panel (TCP)',
+      items: [
+        'getting_started/overview'
+    ],
+    },
+    {
+      type: 'category',
+      label: 'Servidores de Minecraft',
+      items: [
+        'getting_started/overview'
+    ],
+    },
+    {
+      type: 'category',
+      label: 'VPS Hositng',
+      items: [
+        'getting_started/overview'
+    ],
+    },
+    {
+      type: 'category',
+      label: 'Servidores Dedicados',
+      items: [
+        'getting_started/overview'
+    ],
+    },
   ],
   
 };
