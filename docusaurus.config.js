@@ -70,6 +70,9 @@ const config = {
             editUrl: 'https://github.com/Teramont-Host/TeramontDocs/blob/main',
             blogSidebarCount: 5,
             blogSidebarTitle: 'Tutoriales',
+            showReadingTime: true, // When set to false, the "x min read" won't be shown
+            readingTime: ({content, frontMatter, defaultReadingTime}) =>
+              defaultReadingTime({content, options: {wordsPerMinute: 300}}),
         },
     ],
       // [

@@ -55,6 +55,22 @@ const sidebars = {
         'getting_started/overview'
     ],
     },
+    {
+      type: 'category',
+      label: 'Facturación',
+      collapsed: true,
+      items: [
+        'getting_started/overview'
+    ],
+    },
+    {
+      type: 'category',
+      label: 'Extras',
+      collapsed: true,
+      items: [
+        'extras/swap'
+    ],
+    },
   ],
   
 };
