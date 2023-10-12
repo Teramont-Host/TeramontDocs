@@ -170,6 +170,11 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: 'P87VLE9O',
+        apiKey: '765ae0e0e8fd817b26170019aad25634',
+        indexName: 'teramont',
+      },
     }),
 };
 
