@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Teramont Docs',
-  tagline: 'Documentación de Teramont Host',
+  tagline: 'La documentación de Teramont Host es completamente impulsada por nuestra comunidad. Aquí encontrarás una amplia gama de recursos y tutoriales cuidadosamente elaborados por nuestros apasionados miembros.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
