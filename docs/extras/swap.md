@@ -28,11 +28,11 @@ En resumen, para Forge, lo ideal es usar las Flags de Aikar con el SWAP desactiv
 
 ---
 
-Antes de desactivar el SWAP, es importante entender que tu servidor necesita cierto overhead para el proceso JVM. Si desactivas el SWAP y tu servidor está usando las Flags de Aikar, no podrá iniciar ya que no habrá suficiente overhead para el proceso JVM. Por lo tanto, debes ajustar el porcentaje de RAM de inicio (en la pestaña de Inicio) para asegurarte de que haya suficiente overhead.
+Antes de desactivar el SWAP, es importante entender que tu servidor necesita cierto overhead para el proceso JVM. Si desactivas el SWAP y tu servidor está usando las Flags de Aikar, no podrá iniciar ya que no habrá suficiente overhead para el proceso JVM. Por lo tanto, debes ajustar el porcentaje de RAM de inicio (en la pestaña de Arranque) para asegurarte de que haya suficiente overhead.
 
-Para la mayoría de los casos, recomendamos un porcentaje del 70%. Sin embargo, cada servidor es diferente y es posible que necesites ajustar este valor.
+Para la mayoría de los casos, recomendamos un porcentaje del 70%. Sin embargo, cada servidor es diferente y es posible que necesites ajustar este valor. Por ejemplo, si tienes un servidor de 10GB (10240MB) y estableces el porcentaje en 80%, tu servidor tendrá disponibles 8GB (8192MB) para el proceso JVM. El 20% restante se utiliza como overhead para otros procesos y operaciones del sistema. En algunos casos, es recomendable establecer este valor al 100%, especialmente si estás seguro de que el overhead del sistema es mínimo. Sin embargo, en la mayoría de los casos, dejar un margen de overhead es beneficioso para el rendimiento general del servidor.
 
-Si tu servidor se congela, es probable que el overhead no tenga suficiente RAM. Si tu servidor indica "out of memory" en los registros, entonces la JVM se ha quedado sin memoria. En ese caso, considera aumentar la RAM de la JVM, investigar posibles fugas de memoria o simplemente activar nuevamente el SWAP.
+![Configurar el porcentaje de RAM de inicio en Teramont](https://cdn.teramont.net/u/f9KmXZ.png)
 
 ---
 
