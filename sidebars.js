@@ -18,6 +18,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Comenzar',
+      collapsed: false,
       items: [
         'getting_started/overview'
     ],
@@ -25,6 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Teramont Control Panel (TCP)',
+      collapsed: true,
       items: [
         'getting_started/overview'
     ],
@@ -32,6 +34,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Servidores de Minecraft',
+      collapsed: true,
       items: [
         'getting_started/overview'
     ],
@@ -39,6 +42,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'VPS Hositng',
+      collapsed: true,
       items: [
         'getting_started/overview'
     ],
@@ -46,6 +50,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Servidores Dedicados',
+      collapsed: true,
       items: [
         'getting_started/overview'
     ],

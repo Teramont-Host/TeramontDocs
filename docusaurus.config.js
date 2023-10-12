@@ -175,6 +175,11 @@ const config = {
         apiKey: '765ae0e0e8fd817b26170019aad25634',
         indexName: 'teramont',
       },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
     }),
 };
 
