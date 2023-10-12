@@ -100,7 +100,7 @@ const config = {
             position: 'left',
             label: 'Documentación',
           },
-          {to: '/tutorials', label: 'Tutoriales', position: 'left', sidebarId: 'tutorialsSidebar'},
+          {to: '/tutorials/inicio', label: 'Tutoriales', position: 'left'},
           {to: '/tcp-updates', label: 'Registro de cambios TCP', position: 'left'},
           {
             href: 'https://github.com/Teramont-Host/TeramontDocs',
