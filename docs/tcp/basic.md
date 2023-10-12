@@ -42,6 +42,7 @@ A continuación, te presentamos una guía visual de los controles básicos que e
 ## Gráficas
 
 A continuación, te presentamos una guía visual de las gráficas importantes en tu servidor:
+
 ![Controles Básicos del TCP 2](https://cdn.teramont.net/u/YhAJOA.png)
 
 :::info
