@@ -90,7 +90,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/logo.png',
+      image: 'img/banner.png',
       navbar: {
         title: 'Teramont Docs',
         logo: {
