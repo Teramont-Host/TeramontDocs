@@ -39,8 +39,14 @@ Estas flags se aplican automáticamente a todos los servidores para garantizar e
 
 :::note
 Para aquellos usuarios avanzados que deseen personalizar las Aikar's Flags de su servidor, ofrecemos la opción de editarlas directamente desde nuestro Panel de Control (TCP). A continuación, te mostramos dónde puedes encontrar esta opción:
-![Panel de Control - Aikar's Flags](https://cdn.teramont.net/u/PeZewn.png)
+![Panel de Control - Aikar's Flags](https://cdn.teramont.net/u/3jwOoc.png)
 :::
+
+## Uso de memoria y Aikar's Flags
+
+Al usar las Aikar's Flags, el servidor inicia con toda la memoria RAM preasignada, tomando el valor del porcentaje de RAM configurado que mencionamos en nuestra [guía de SWAP](https://docs.teramont.net/docs/extras/swap#qu%C3%A9-es-el-porcentaje-de-ram-en-inicio). Esto significa que si, por ejemplo, tienes un servidor de 10GB y configuras el porcentaje de RAM al 80%, el servidor usará 8GB desde el inicio. El uso de estas flags garantiza que la memoria esté disponible y optimizada desde el momento en que el servidor se inicia.
+
+Además, en Teramont Host, cubrimos con swap ese techo al usar las Aikar's Flags para garantizar que el servidor tenga suficiente memoria disponible en todo momento. Puedes leer más sobre cómo manejamos el swap en el [artículo mencionado](https://docs.teramont.net/docs/extras/swap).
 
 ## Conclusión
 

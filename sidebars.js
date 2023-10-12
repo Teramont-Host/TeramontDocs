@@ -28,7 +28,7 @@ const sidebars = {
       label: 'Teramont Control Panel (TCP)',
       collapsed: true,
       items: [
-        'getting_started/overview'
+        'tcp/basic'
     ],
     },
     {
