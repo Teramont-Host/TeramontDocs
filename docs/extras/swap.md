@@ -28,9 +28,13 @@ En resumen, para Forge, lo ideal es usar las Flags de Aikar con el SWAP desactiv
 
 ---
 
-Antes de desactivar el SWAP, es importante entender que tu servidor necesita cierto overhead para el proceso JVM. Si desactivas el SWAP y tu servidor está usando las Flags de Aikar, no podrá iniciar ya que no habrá suficiente overhead para el proceso JVM. Por lo tanto, debes ajustar el porcentaje de RAM de inicio (en la pestaña de Arranque) para asegurarte de que haya suficiente overhead.
+### ¿Qué es el porcentaje de RAM en inicio?
 
-Para la mayoría de los casos, recomendamos un porcentaje del 70%. Sin embargo, cada servidor es diferente y es posible que necesites ajustar este valor. Por ejemplo, si tienes un servidor de 10GB (10240MB) y estableces el porcentaje en 80%, tu servidor tendrá disponibles 8GB (8192MB) para el proceso JVM. El 20% restante se utiliza como overhead para otros procesos y operaciones del sistema. En algunos casos, es recomendable establecer este valor al 100%, especialmente si estás seguro de que el overhead del sistema es mínimo. Sin embargo, en la mayoría de los casos, dejar un margen de overhead es beneficioso para el rendimiento general del servidor.
+El porcentaje de RAM en inicio se refiere a la cantidad de memoria que se asigna al proceso JVM cuando tu servidor inicia. Es esencialmente una reserva de memoria que garantiza que el servidor tenga suficiente RAM disponible para operar de manera eficiente.
+
+Para la mayoría de los casos, recomendamos un porcentaje del 70%. Sin embargo, cada servidor es diferente y es posible que necesites ajustar este valor. Por ejemplo, si tienes un servidor de 10GB (10240MB) y estableces el porcentaje en 80%, tu servidor tendrá disponibles 8GB (8192MB) para el proceso JVM. El 20% restante se utiliza como overhead para otros procesos y operaciones del sistema, como la gestión de conexiones, operaciones de E/S y otros servicios del sistema.
+
+En algunos casos, es recomendable establecer este valor al 100%, especialmente si estás seguro de que el overhead del sistema es mínimo. Sin embargo, en la mayoría de los casos, dejar un margen de overhead es beneficioso para el rendimiento general del servidor. Esto garantiza que el servidor tenga suficiente memoria para manejar picos inesperados de carga o procesos adicionales sin afectar el rendimiento.
 
 ![Configurar el porcentaje de RAM de inicio en Teramont](https://cdn.teramont.net/u/f9KmXZ.png)
 

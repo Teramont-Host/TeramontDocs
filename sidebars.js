@@ -36,7 +36,7 @@ const sidebars = {
       label: 'Servidores de Minecraft',
       collapsed: true,
       items: [
-        'getting_started/overview'
+        'minecraft_servers/aikars_flags'
     ],
     },
     {
