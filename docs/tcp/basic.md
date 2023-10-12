@@ -39,3 +39,15 @@ A continuación, te presentamos una guía visual de los controles básicos que e
 18. **Apagar/Forzar cierre**: Utiliza este botón para apagar o forzar el cierre de tu servidor.
 :::
 
+## Gráficas
+
+A continuación, te presentamos una guía visual de las gráficas importantes en tu servidor:
+![Controles Básicos del TCP 2](https://cdn.teramont.net/u/YhAJOA.png)
+
+:::info
+**Descripción de las gráficas:**
+
+1. **Carga de la CPU**: Podrás ver en tiempo real el consumo de CPU.
+2. **Memoria**: Podrás ver en tiempo real el consumo de RAM.
+3. **Ancho de banda**: Podrás ver en tiempo real el tráfico de red actual de tu servidor.
+:::
