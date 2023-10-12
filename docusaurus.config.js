@@ -68,6 +68,8 @@ const config = {
             path: 'tutorials',
             routeBasePath: 'tutorials',
             editUrl: 'https://github.com/Teramont-Host/TeramontDocs/blob/main',
+            blogSidebarCount: 5,
+            blogSidebarTitle: 'Tutoriales',
         },
     ],
       // [
@@ -98,7 +100,7 @@ const config = {
             position: 'left',
             label: 'Documentación',
           },
-          {to: '/blog', label: 'Tutoriales', position: 'left'},
+          {to: '/tutorials', label: 'Tutoriales', position: 'left', sidebarId: 'tutorialsSidebar'},
           {to: '/tcp-updates', label: 'Registro de cambios TCP', position: 'left'},
           {
             href: 'https://github.com/Teramont-Host/TeramontDocs',

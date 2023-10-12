@@ -13,6 +13,7 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  // Sidebar para la documentación
   docsSidebar: [
     {
       type: 'category',
