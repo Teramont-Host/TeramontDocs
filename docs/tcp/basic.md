@@ -14,6 +14,7 @@ Puedes acceder al TCP desde [panel.teramont.net](https://panel.teramont.net).
 A continuación, te presentamos una guía visual de los controles básicos que encontrarás en la sección "Consola" de nuestro panel:
 
 ![Controles Básicos del TCP](https://cdn.teramont.net/u/glGjpG.png)
+![Controles Básicos del TCP 2](https://cdn.teramont.net/u/J0CFNE.png)
 
 :::info
 **Descripción de los controles:**
