@@ -17,7 +17,7 @@ const sidebars = {
   docsSidebar: [
     {
       type: 'category',
-      label: 'Comenzar',
+      label: 'Guía de Inicio',
       collapsed: false,
       items: [
         'getting_started/overview'

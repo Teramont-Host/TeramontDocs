@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
-    locales: ['es'],
+    locales: ['es', 'en'],
   },
 
   presets: [
@@ -109,6 +109,7 @@ const config = {
           },
         ],
       },
+      
       footer: {
         style: 'dark',
         links: [
@@ -166,15 +167,20 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Teramont Host Documentation. Built with Docusaurus.`,
       },
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+
       algolia: {
         appId: 'P87VLE9O',
         apiKey: '765ae0e0e8fd817b26170019aad25634',
         indexName: 'teramont',
+        contextualSearch: true,
+        searchParameters: {},
       },
+
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
