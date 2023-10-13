@@ -31,7 +31,8 @@ const sidebars = {
         'tcp/basic',
         'tcp/files',
         'tcp/sub-users',
-        'tcp/mysql'
+        'tcp/mysql',
+        'tcp/backups'
     ],
     },
     {
