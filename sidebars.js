@@ -29,7 +29,8 @@ const sidebars = {
       collapsed: true,
       items: [
         'tcp/basic',
-        'tcp/files'
+        'tcp/files',
+        'tcp/sub-users'
     ],
     },
     {
