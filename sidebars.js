@@ -52,14 +52,14 @@ const sidebars = {
     //     'getting_started/overview'
     // ],
     // },
-    // {
-    //   type: 'category',
-    //   label: 'Servidores Dedicados',
-    //   collapsed: true,
-    //   items: [
-    //     'getting_started/overview'
-    // ],
-    // },
+    {
+      type: 'category',
+      label: 'Servidores Dedicados',
+      collapsed: true,
+      items: [
+        'bare_metal/loyalty_points'
+    ],
+    },
     // {
     //   type: 'category',
     //   label: 'Facturación',
