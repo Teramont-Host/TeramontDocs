@@ -58,9 +58,9 @@ Esto te llevará a una pantalla con la siguiente información:
 :::note
 Al hacer clic en el ícono de acciones rápidas ![Actions Icon](https://cdn.teramont.net/u/1Dfy37.png) se desplegarán las siguientes opciones:
 
-- **Exportar**: Guarda una copia de tu base de datos.
-- **Importar**: Restaura tu base de datos desde una copia.
-- **Importar from file**: Sube y restaura una base de datos desde un archivo.
+- **Export**: Guarda una copia de tu base de datos.
+- **Import**: Restaura tu base de datos desde una copia.
+- **Import from file**: Sube y restaura una base de datos desde un archivo.
 - **Clear**: Elimina todos los datos de la base de datos.
 - **Delete**: Borra la base de datos completamente.
 :::
