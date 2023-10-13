@@ -32,7 +32,8 @@ const sidebars = {
         'tcp/files',
         'tcp/sub-users',
         'tcp/mysql',
-        'tcp/backups'
+        'tcp/backups',
+        'tcp/activity'
     ],
     },
     {
