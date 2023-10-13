@@ -30,7 +30,8 @@ const sidebars = {
       items: [
         'tcp/basic',
         'tcp/files',
-        'tcp/sub-users'
+        'tcp/sub-users',
+        'tcp/mysql'
     ],
     },
     {
