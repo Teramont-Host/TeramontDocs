@@ -3,7 +3,7 @@ title: Puntos de lealtad
 sidebar_label: Puntos de lealtad
 ---
 
-# ¿Qué son las recompensas del programa puntos de lealtad?
+## ¿Qué son las recompensas del programa puntos de lealtad?
 
 El programa de recompensas de lealtad permite a los clientes obtener actualizaciones de hardware gratuitas para los servicios existentes bare metal. Las recompensas están asociadas con productos / servicios y no con cuentas de clientes. Cada producto acumula sus propias recompensas.
 
@@ -27,11 +27,11 @@ Las mejoras canjeadas con puntos no tienen valor en efectivo ni en puntos. Cualq
 
 Los puntos no se pueden utilizar para reducir el costo/valor de un producto/servicio. Cualquier degradación realizada eliminará las actualizaciones realizadas utilizando primero los puntos.
 
-# ¿Como puedo ver los puntos de lealtad de mi servicio?
+## ¿Como puedo ver los puntos de lealtad de mi servicio?
 
 Para poder conocer cuántos puntos de lealtad tienes acumulado en tu servicio deberás abrir un ticket y preguntar cuántos puntos de lealtad tienes acumulados para el servicio seleccionado.
 
-# Canjear puntos de lealtad
+## Canjear puntos de lealtad
 
 Para canjear recompensas de fidelidad, abra un ticket en discord si tiene vinculada su cuenta o abra un ticket en el panel de facturación.
 
