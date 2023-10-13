@@ -3,7 +3,7 @@ title: Administrador de Usuarios (Subusuarios)
 sidebar_label: Administrador de Usuarios
 ---
 
-# Teramont Control Panel (TCP): Administrador de Usuarios (Subusuarios)
+# Administrador de Usuarios (Subusuarios) en TCP
 
 El Teramont Control Panel (TCP) ofrece una funcionalidad poderosa para administrar subusuarios. Estos subusuarios son cuentas adicionales a las que puedes dar acceso a tu servidor en el panel, permitiéndote compartir responsabilidades y tareas con otros sin comprometer la seguridad o la integridad de tu servidor.
 
