@@ -1,3 +1,8 @@
+---
+title: SWAP
+sidebar_label: SWAP
+---
+
 ## Introducción
 
 Bienvenido a nuestra guía sobre SWAP. Aquí te explicaremos qué es, cómo funciona y cómo puedes desactivarlo si así lo deseas.

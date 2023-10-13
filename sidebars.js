@@ -44,30 +44,30 @@ const sidebars = {
         'minecraft_servers/aikars_flags'
     ],
     },
-    {
-      type: 'category',
-      label: 'VPS Hosting',
-      collapsed: true,
-      items: [
-        'getting_started/overview'
-    ],
-    },
-    {
-      type: 'category',
-      label: 'Servidores Dedicados',
-      collapsed: true,
-      items: [
-        'getting_started/overview'
-    ],
-    },
-    {
-      type: 'category',
-      label: 'Facturación',
-      collapsed: true,
-      items: [
-        'getting_started/overview'
-    ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'VPS Hosting',
+    //   collapsed: true,
+    //   items: [
+    //     'getting_started/overview'
+    // ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Servidores Dedicados',
+    //   collapsed: true,
+    //   items: [
+    //     'getting_started/overview'
+    // ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Facturación',
+    //   collapsed: true,
+    //   items: [
+    //     'getting_started/overview'
+    // ],
+    // },
     {
       type: 'category',
       label: 'Extras',

@@ -23,7 +23,7 @@ La sección de Actividad en el panel TCP es esencial para monitorear y auditar l
 :::tip
 #### Metadatos:
 
-En algunos registros, verás un botón de metadatos ![Metadatos](https://cdn.teramont.net/u/7mB8zQ.png). Al hacer clic en este botón, se desplegará una ventana con información adicional sobre la acción realizada. Esta información puede incluir detalles específicos del comando ejecutado, la IP desde la que se realizó la acción, entre otros datos relevantes.
+En algunos registros, verás un botón de metadatos. ![Metadatos](https://cdn.teramont.net/u/7mB8zQ.png) Al hacer clic en este botón, se desplegará una ventana con información adicional sobre la acción realizada. Esta información puede incluir detalles específicos del comando ejecutado, la IP desde la que se realizó la acción, entre otros datos relevantes.
 
 ![Información Adicional](https://cdn.teramont.net/u/SufzeC.png)
 
