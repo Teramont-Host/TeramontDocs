@@ -29,6 +29,32 @@ Las copias de seguridad son esenciales para garantizar la integridad y seguridad
 5. **Visualización**: Tras crear la copia, podrás visualizarla en el apartado "Backups".
    ![Lista de Copias](https://cdn.teramont.net/u/lQKAb7.png)
 
+### El archivo `.pteroignore`
+
+El archivo `.pteroignore` es utilizado por TCP para determinar qué archivos o directorios deben ser excluidos de las copias de seguridad. Funciona de manera similar a cómo `.gitignore` funciona en Git. Cada línea del archivo especifica un patrón que se compara con los nombres de archivo en tu servidor.
+
+:::info
+#### Ejemplo de un archivo `.pteroignore`:
+
+```
+# Comentarios comienzan con un '#'
+logs/           # Ignora todo el directorio de logs
+*.temp          # Ignora todos los archivos con extensión .temp
+!important.temp # Pero no ignores archivos llamados important.temp
+backups/        # Ignora el directorio de backups
+*.bak           # Ignora todos los archivos con extensión .bak
+```
+
+:::
+
+- Las líneas que comienzan con `#` son comentarios y no se tienen en cuenta.
+- Los patrones que terminan con una barra `/` se usan para excluir directorios.
+- El prefijo `!` se utiliza para negar un patrón; cualquier archivo o directorio que coincida con este patrón será incluido en la copia de seguridad, incluso si coincide con uno de los patrones de exclusión anteriores.
+
+:::tip
+Es recomendable revisar y actualizar regularmente el archivo `.pteroignore` para asegurarte de que las copias de seguridad contengan todos los archivos esenciales y excluyan aquellos que no son necesarios.
+:::   
+
 #### Acciones Rápidas
 
 :::note
