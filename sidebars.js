@@ -42,7 +42,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'VPS Hositng',
+      label: 'VPS Hosting',
       collapsed: true,
       items: [
         'getting_started/overview'
