@@ -81,7 +81,7 @@ Para añadir un nuevo subusuario, sigue estos pasos:
 - **Eliminar**: Permite al usuario eliminar una instancia de base de datos del servidor.
 - **Ver contraseña**: Permite al usuario ver la contraseña asociada con una instancia de base de datos.
 
-#### PROGRAMACIÓN
+#### TAREAS
 - **Crear**: Permite al usuario crear nuevas programaciones para el servidor.
 - **Leer**: Permite al usuario ver programaciones y las tareas asociadas con ellas para el servidor.
 - **Actualizar**: Permite al usuario actualizar programaciones y tareas programadas para el servidor.
