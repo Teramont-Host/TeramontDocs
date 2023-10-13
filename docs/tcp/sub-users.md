@@ -149,4 +149,4 @@ Recuerda que la gestión adecuada de los subusuarios y sus permisos es esencial 
 
 ### Conclusión
 
-La administraciónn de subusuarios en el TCP es una herramienta esencial para aquellos que buscan colaborar con otros en la gestión de su servidor. Con una amplia gama de permisos disponibles, puedes personalizar el acceso de cada subusuario para adaptarse a tus necesidades específicas, garantizando al mismo tiempo la seguridad y la integridad de tu servidor.
+La administración de subusuarios en el TCP es una herramienta esencial para aquellos que buscan colaborar con otros en la gestión de su servidor. Con una amplia gama de permisos disponibles, puedes personalizar el acceso de cada subusuario para adaptarse a tus necesidades específicas, garantizando al mismo tiempo la seguridad y la integridad de tu servidor.
