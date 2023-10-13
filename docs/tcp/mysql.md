@@ -28,15 +28,18 @@ Una vez establecido, el campo "CONNECTIONS FROM" no puede ser editado posteriorm
 :::
 
 4. **Confirmar**: Una vez que hayas completado los campos, haz clic en "CREAR BASE DE DATOS". 
+
    ![Filled Fields](https://cdn.teramont.net/u/gYY4t5.png)
 
 5. **Visualización**: Después de crear la base de datos, podrás verla en la interfaz principal del TCP.
+
    ![Database List](https://cdn.teramont.net/u/ExIoP5.png)
 
 #### Detalles de la Base de Datos
 
 :::tip
 Para acceder a los detalles completos de tu base de datos, haz clic en el ícono de detalles.
+
 ![Details Icon](https://cdn.teramont.net/u/kGLHOX.png)
 :::
 
@@ -53,7 +56,7 @@ Esto te llevará a una pantalla con la siguiente información:
 #### Acciones Rápidas
 
 :::note
-Al hacer clic en el ícono de acciones rápidas ![Actions Icon](https://cdn.teramont.net/u/1Dfy37.png), se desplegarán las siguientes opciones:
+Al hacer clic en el ícono de acciones rápidas ![Actions Icon](https://cdn.teramont.net/u/1Dfy37.png) se desplegarán las siguientes opciones:
 
 - **Exportar**: Guarda una copia de tu base de datos.
 - **Importar**: Restaura tu base de datos desde una copia.
@@ -67,11 +70,12 @@ Al hacer clic en el ícono de acciones rápidas ![Actions Icon](https://cdn.tera
 :::caution
 Para garantizar la integridad y seguridad de tus datos, puedes hacer copias de seguridad de tus bases de datos:
 
-1. Haz clic en el ícono de copias de seguridad ![Backup Icon](https://cdn.teramont.net/u/0V8pYs.png).
+1. Haz clic en el botón create backup.
+  ![Backup Icon](https://cdn.teramont.net/u/0V8pYs.png)
 2. Ingresa un nombre para tu copia de seguridad en **BACKUP NAME** y selecciona la base de datos en **DATABASE**.
 3. Haz clic en "start backup".
 4. Una vez completada la copia de seguridad, podrás verla en el panel del TCP, donde tendrás opciones para descargar, restaurar o eliminar la copia de seguridad.
    ![Backup List](https://cdn.teramont.net/u/mINPnU.png)
 :::
 
-Con estos pasos, podrás gestionar y asegurar tus bases de datos de manera eficiente y segura en el TCP de Teramont Host.
+Con estos pasos, podrás gestionar y asegurar tus bases de datos de manera eficiente y segura en TCP de Teramont Host.
