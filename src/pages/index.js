@@ -23,8 +23,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Teramont Host ${siteConfig.title}`}
+      description="La documentación de Teramont Host es completamente impulsada por nuestra comunidad. Aquí encontrarás una amplia gama de recursos y tutoriales cuidadosamente elaborados por nuestros apasionados miembros.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

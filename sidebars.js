@@ -73,7 +73,8 @@ const sidebars = {
       label: 'Extras',
       collapsed: true,
       items: [
-        'extras/swap'
+        'extras/swap',
+        'extras/cores'
     ],
     },
   ],
