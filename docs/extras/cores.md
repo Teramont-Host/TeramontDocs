@@ -1,6 +1,6 @@
 ---
 title: Nucleos e Hilos
-sidebar_label: SWAP
+sidebar_label: Nucleos e Hilos
 ---
 
 ## Explorando la Diferencia: Núcleos Físicos, Núcleos Lógicos y Hilos
