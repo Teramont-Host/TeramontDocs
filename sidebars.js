@@ -74,7 +74,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'extras/swap',
-        'extras/cores'
+        'extras/plans'
     ],
     },
   ],
