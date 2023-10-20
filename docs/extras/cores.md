@@ -30,9 +30,9 @@ En Teramont Host, cada plan se configura con un tipo diferente de procesador y r
 ### Advanced: Intel® Core™ i9 9900K
 
 :::info
-- **Procesador:** Intel® Core™ i9 9900K (8 núcleos físicos, 16 núcleos lógicos)
+- **Procesador:** Intel® Core™ i9 9900K 3.6hz (8 núcleos físicos, 16 núcleos lógicos)
 - **RAM:** DDR4 (2133 Mhz)
-- **Almacenamiento:** SSD NVMe 3.6hz
+- **Almacenamiento:** SSD NVMe
 - **CPU Benchmark:** 18,493
 
 El plan Advanced proporciona un balance entre rendimiento y eficiencia, ideal para aplicaciones que requieren una buena cantidad de recursos pero no el máximo rendimiento posible. En este plan, los núcleos lógicos son compartidos entre los usuarios, lo que puede llevar a una variabilidad en el rendimiento dependiendo de la demanda del sistema en un momento dado.
@@ -41,9 +41,9 @@ El plan Advanced proporciona un balance entre rendimiento y eficiencia, ideal pa
 ### Extreme: AMD Ryzen™ 9 5900X
 
 :::danger
-- **Procesador:** AMD Ryzen™ 9 5900X (12 núcleos físicos, 24 núcleos lógicos)
+- **Procesador:** AMD Ryzen™ 9 5900X 3.7hz (12 núcleos físicos, 24 núcleos lógicos)
 - **RAM:** DDR4 (2666 Mhz)
-- **Almacenamiento:** SSD NVMe 3.7hz
+- **Almacenamiento:** SSD NVMe
 - **CPU Benchmark:** 39,506
 
 El plan Extreme está diseñado para tareas más exigentes y aplicaciones intensivas en recursos, ofreciendo un rendimiento superior gracias al procesador AMD Ryzen™ 9 5900X. Sin embargo, todos los cores en este plan son compartidos entre todos los usuarios, lo que podría llevar a una variabilidad en el rendimiento durante los períodos de alta demanda.
@@ -52,9 +52,9 @@ El plan Extreme está diseñado para tareas más exigentes y aplicaciones intens
 ### Performance: AMD Ryzen™ 9 5950X
 
 :::warning
-- **Procesador:** AMD Ryzen™ 9 5950X (16 núcleos físicos, 32 núcleos lógicos)
+- **Procesador:** AMD Ryzen™ 9 5950X 3.4hz (16 núcleos físicos, 32 núcleos lógicos)
 - **RAM:** DDR4 (2666 Mhz)
-- **Almacenamiento:** SSD NVMe 3.4hz
+- **Almacenamiento:** SSD NVMe
 - **CPU Benchmark:** 45,948
 
 El plan Performance está diseñado para ofrecer el máximo rendimiento, con núcleos lógicos dedicados que garantizan una mayor estabilidad y un rendimiento predecible. Es especialmente beneficioso para aplicaciones críticas y tareas que requieren una gran cantidad de recursos computacionales. Además, los usuarios tienen la flexibilidad de dividir su servidor en sub-servidores, permitiendo una gestión eficiente y personalizada de los recursos.
