@@ -1,4 +1,4 @@
 ---
 title: Proxy Inverso
-sidebar_label: Registro de actividad
+sidebar_label: Proxy Inverso
 ---
