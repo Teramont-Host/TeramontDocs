@@ -36,7 +36,8 @@ const sidebars = {
         'tcp/activity',
         'tcp/players',
         'tcp/versions',
-        'tcp/plugins'
+        'tcp/plugins',
+        'tcp/reverse_proxy'
     ],
     },
     {
