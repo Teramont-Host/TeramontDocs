@@ -33,7 +33,8 @@ const sidebars = {
         'tcp/sub-users',
         'tcp/mysql',
         'tcp/backups',
-        'tcp/activity'
+        'tcp/activity',
+        'tcp/players'
     ],
     },
     {
