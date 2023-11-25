@@ -61,7 +61,8 @@ const sidebars = {
       label: 'Servidores Dedicados',
       collapsed: true,
       items: [
-        'bare_metal/loyalty_points'
+        'bare_metal/loyalty_points',
+        'bare_metal/overclocking'
     ],
     },
     // {
