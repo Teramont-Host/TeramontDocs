@@ -29,7 +29,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'tcp/dashboard',
-        'tcp/basic',
+        'tcp/console',
         'tcp/files',
         'tcp/sub-users',
         'tcp/mysql',

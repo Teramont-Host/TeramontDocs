@@ -35,10 +35,10 @@ Asegúrate de usar WinSCP para iniciar sesión utilizando SFTP.
 
 ## Información del Servidor
 
-- **Estado**:
-- **Tiempo de Actividad**:
-- **Nombre del Host**:
-- **Jugadores**:
-- **IP del Servidor**:
-- **ID del Nodo**:
-- **ID del Servidor**:
+- **Estado**: Indica si tu servidor está online o si está offline.
+- **Tiempo de Actividad**: Muestra el tiempo de actividad de tu servidor.
+- **Nombre del Host**: Muestra el nombre del host del servidor.
+- **Jugadores**: (Solo visible para servidores de juegos) Muestra la cantidad de jugadores conectados.
+- **IP del Servidor**: Dirección IP pública con la que podrás acceder a tu servidor.
+- **ID del Nodo**: Muestra el ID del nodo, ideal para proporcionarlo al pedir soporte.
+- **ID del Servidor**: Muestra el ID del servidor, ideal para proporcionarlo al pedir soporte.
