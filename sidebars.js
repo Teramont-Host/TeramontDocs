@@ -30,6 +30,7 @@ const sidebars = {
       items: [
         'tcp/dashboard',
         'tcp/console',
+        'tcp/settings',
         'tcp/files',
         'tcp/sub-users',
         'tcp/mysql',
