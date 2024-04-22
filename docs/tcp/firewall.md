@@ -1,7 +1,7 @@
 ---
 title: Cortafuegos
 sidebar_label: Cortafuegos
----
+--- 
 
 ### Configuración del Cortafuegos
 
@@ -12,6 +12,10 @@ El cortafuegos te permite controlar el tráfico entrante y saliente de tu servid
 :::info
 Para bloquear todas las conexiones entrantes y salientes, utiliza la dirección IP `0.0.0.0/0` con prioridad `100` y el tipo de bloqueo.
 Para permitir conexiones de direcciones IP específicas, utiliza la dirección IP `x.x.x.x/32` (reemplaza las `x` por la dirección IP deseada), establece una prioridad entre `1` y `99`, y selecciona el tipo de conexión como "Permitir".
+:::
+
+:::tip
+Añadir /32 a la IP significa que estás especificando una sola dirección IP en lugar de un rango de direcciones.
 :::
 
 #### Campos del Cortafuegos
@@ -29,7 +33,7 @@ Asegúrate de configurar las reglas de cortafuegos de manera cuidadosa para evit
 Utiliza reglas de cortafuegos para mejorar la seguridad de tu servidor y controlar el tráfico de red según tus necesidades específicas.
 :::
 
-## Ejemplo de uso
+## Ejemplo de uso (IP Dedicada o Misma IP)
 
 Si tienes una network y usas el plugin Bungeeguard para evitar que ingresen a tus modalidades sin antes pasar por el proxy, la función del firewall es una opción extra de seguridad y más segura. Supongamos que tienes el plan Performance 20GB contratado y tienes la siguiente distribución:
 
@@ -51,5 +55,30 @@ Asegúrate de que el servidor proxy no tenga reglas de firewall activas.
 :::
 
 :::warning
-Esta guía solo funciona si tienes el complemento IP Dedicada y todos tus servidores comparten la misma dirección IP. Planeamos lanzar una guía próximamente para clientes que usen la IP compartida.
+Lo siguiente solo funciona si todos tus servidores comparten la misma dirección IP, si no es así sigue los pasos de abajo
+:::
+
+## Ejemplo de uso 2 (No comparte IP)
+
+En caso de que tus servidores backend no tengan la misma dirección IP de tu proxy, deberás hacer lo siguiente. Supongamos que tienes 3 servidores:
+
+- Proxy: 104.243.46.86
+- Lobby: 127.345.45.67
+- Modalidad 1: 127.456.456.67
+- Modalidad 2: 234.567.34.67
+
+La configuración es similar, en todos tus servidores backend deberás configurar la siguiente regla:
+
+![Configuración Repetida](../../static/tcp/firewall/firewall3.png)
+
+Adicionalmente, deberás crear otra regla. Para eso, debemos identificar la dirección IP de nuestro proxy, en este caso 104.243.46.86. Una vez identificada, le agregamos lo siguiente "/32", esto nos debe quedar de la siguiente forma: 104.243.46.86/32. Una vez hecho esto, añadimos la regla a nuestro Firewall de la siguiente forma:
+
+![Configuración Repetida](../../static/tcp/firewall/firewall4.png)
+
+Finalmente, la configuración de nuestros servidores backend debe quedar de la siguiente forma:
+
+![Configuración Repetida](../../static/tcp/firewall/firewall5.png)
+
+:::warning
+Asegúrate de que el servidor proxy no tenga reglas de firewall activas.
 :::
