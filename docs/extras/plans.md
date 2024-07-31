@@ -49,6 +49,17 @@ El plan Advanced proporciona un balance entre rendimiento y eficiencia, ideal pa
 El plan Extreme está diseñado para tareas más exigentes y aplicaciones intensivas en recursos, ofreciendo un rendimiento superior gracias al procesador AMD Ryzen™ 9 5900X. Sin embargo, todos los cores en este plan son compartidos entre todos los usuarios, lo que podría llevar a una variabilidad en el rendimiento durante los períodos de alta demanda.
 :::
 
+### Extreme+: AMD Ryzen™ 9 7900
+
+:::danger
+- **Procesador:** AMD Ryzen™ 9 7900 3.7hz (12 núcleos físicos, 24 núcleos lógicos)
+- **RAM:** DDR5 (3600 Mhz)
+- **Almacenamiento:** SSD NVMe
+- **CPU Benchmark:** 48,619
+
+El plan Extreme+ ofrece una opción aún más potente para tareas que requieren un alto rendimiento. Al igual que en los planes anteriores, los recursos son compartidos, lo que puede resultar en variaciones de rendimiento durante picos de demanda. Este plan es adecuado para aplicaciones que requieren un procesamiento intensivo y la capacidad de manejar múltiples tareas simultáneamente.
+:::
+
 ### Performance: AMD Ryzen™ 9 5950X
 
 :::warning
@@ -81,4 +92,10 @@ En el plan Advanced, Teramont ofrece **Núcleos Lógicos Compartidos**. Aunque e
 
 :::danger
 El plan Extreme proporciona **acceso compartido a todos los cores del procesador**. Esto significa que todos los usuarios tienen acceso a los cores del procesador, lo que permite una alta concurrencia y la capacidad de manejar múltiples tareas simultáneamente. Sin embargo, dado que todos los cores se comparten entre todos los usuarios, podría haber una variabilidad en el rendimiento, especialmente durante los períodos de alta demanda. Similar al plan Advanced, la división de servidores no se ofrece en este plan debido a la naturaleza compartida de los recursos, lo cual podría comprometer la estabilidad del sistema.
+:::
+
+### Extreme+
+
+:::danger
+El plan Extreme+ sigue el mismo enfoque que el plan Extreme, proporcionando **acceso compartido a todos los cores del procesador**, pero con hardware más potente. Esto significa que los usuarios comparten los recursos del procesador AMD Ryzen™ 9 7900, lo que permite manejar aplicaciones aún más exigentes y tareas intensivas en recursos. Como con los otros planes compartidos, el rendimiento puede variar dependiendo de la carga del sistema.
 :::
