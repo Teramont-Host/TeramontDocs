@@ -7,7 +7,7 @@ sidebar_label: Administrador de archivos
 
 El Administrador de archivos en el **Teramont Control Panel (TCP)** es una herramienta esencial que te permite gestionar, visualizar y modificar los archivos de tu servidor de manera eficiente y sencilla.
 
-![Administrador de archivos](../../static/tcp_assets/imgs/Container1.png)
+![Administrador de archivos](../../static/tcp_assets/imgs/container1.png)
 
 ---
 
@@ -28,7 +28,7 @@ En la parte superior de la interfaz del Administrador de archivos, encontrarás 
 9. **Git Clone:** Clona un repositorio Git en la ruta actual.
 10. **Git Pull:** Actualiza un repositorio Git existente.
 
-![Controles básicos](../../static/tcp_assets/imgs/Container2.png)
+![Controles básicos](../../static/tcp_assets/imgs/container2.png)
 
 ---
 
