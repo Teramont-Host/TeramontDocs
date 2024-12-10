@@ -1,40 +1,40 @@
 ---
-title: Jugadores
-sidebar_label: Jugadores
+title: Gestión de Jugadores
+sidebar_label: Players
 ---
 
-### Sección de Jugadores (Players)
+### Gestión de Jugadores
 
-La sección de Jugadores en el panel TCP es una herramienta dedicada exclusivamente para administradores de servidores de Minecraft. Esta sección proporciona una interfaz intuitiva para gestionar los jugadores en tiempo real, permitiéndote mantener un entorno de juego seguro y agradable para todos los participantes.
+La sección de **Players** en el panel TCP permite a los administradores del servidor gestionar a los jugadores conectados, revisar baneo de usuarios y administrar la lista de operadores (OPs). Este módulo facilita la administración activa de la comunidad y el mantenimiento de un entorno seguro para el servidor.
 
-![Sección de Jugadores](https://cdn.teramont.net/u/ytf5gH.png)
+---
 
-:::info
-#### Características principales de la sección de Jugadores:
+![Vista de Gestión de Jugadores](../../static/tcp_assets/imgs/players.png)
 
-- **Vista en Tiempo Real**: Observa quiénes están conectados en tu servidor en tiempo real. La página se actualiza automáticamente cada 25 segundos, proporcionando una visión actualizada de la actividad del jugador.
+#### Funcionalidades Principales
 
-- **Gestión de Jugadores**: Tienes la capacidad de realizar varias acciones administrativas directamente desde esta interfaz, incluyendo otorgar permisos de operador (OP), expulsar jugadores, o incluso imponer o levantar baneos.
+1. **Lista de Jugadores Conectados**:
+   - Muestra a todos los jugadores actualmente conectados al servidor.
+   - Información detallada de cada jugador, incluyendo su nombre de usuario y estado de conexión.
+   - Opciones rápidas:
+     - **Añadir a Operadores**: Eleva al jugador a OP directamente desde la lista.
+     - **Expulsar**: Desconecta a un jugador del servidor.
+     - **Banear**: Bloquea el acceso del jugador al servidor de forma permanente o temporal.
 
-:::
+2. **Baneos**:
+   - Visualiza la lista de jugadores actualmente baneados.
+   - Opciones disponibles para desbanear a usuarios desde esta sección.
+   - Ideal para mantener el control sobre las sanciones aplicadas y revisarlas regularmente.
 
-:::tip
-#### Acciones administrativas disponibles:
+3. **Operadores**:
+   - Lista de todos los jugadores con permisos de OP (Operadores).
+   - Permite añadir o remover operadores rápidamente.
+   - Es esencial para administrar permisos y delegar responsabilidades.
 
-1. **Añadir a OP**: Otorga al jugador seleccionado privilegios de operador (OP), permitiéndole ejecutar ciertos comandos y tener más control en el juego.
+---
 
-2. **Expulsar**: Expulsa al jugador del servidor, pero permite que regrese en cualquier momento.
+#### Notas importantes
 
-3. **Banear**: Impide que el jugador acceda al servidor permanentemente o hasta que se levante el baneo.
-
-4. **Desbanear**: Levanta la restricción impuesta sobre un jugador, permitiéndole volver a acceder al servidor.
-
-5. **Remover OP**: Retira los privilegios de operador del jugador, revocando los permisos especiales que tenía.
-
-:::
-
-:::caution
-Es vital utilizar estas herramientas con responsabilidad, ya que afectan directamente la experiencia de los jugadores en tu servidor. La gestión adecuada puede contribuir a mantener un ambiente comunitario saludable y divertido para todos.
-:::
-
-Esta sección es esencial para los administradores que desean mantener un control efectivo sobre las actividades dentro de su servidor de Minecraft, asegurando que todas las interacciones cumplan con las reglas establecidas para la comunidad.
+- El sistema de jugadores es una herramienta poderosa para gestionar tu comunidad en tiempo real.
+- Usa las opciones de baneo y expulsión de manera responsable para mantener un ambiente de juego justo y divertido.
+- Asegúrate de revisar regularmente la lista de operadores y baneos para mantener el control sobre tu servidor.

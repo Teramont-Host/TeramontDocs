@@ -1,44 +1,72 @@
+# Bienvenido a Teramont Control Panel (TCP)
+
+El **Teramont Control Panel (TCP)** es una solución robusta y eficiente para la administración de servidores. Basado en el potente panel **Pterodactyl**, ha sido personalizado por **Teramont Host** para brindar una experiencia única que facilita el monitoreo, la gestión y el control de servidores en tiempo real.
+
+Accede a nuestro panel desde: [panel.teramont.net](https://panel.teramont.net).
+
 ---
-title: Tablero
-sidebar_label: Tablero
+
+## Funcionalidades Destacadas del Dashboard
+
+El Dashboard del TCP ofrece toda la información clave para monitorear y administrar tu servidor en un solo lugar. Aquí tienes una explicación detallada de cada sección visible:
+
 ---
 
-## Introducción a Teramont Control Panel (TCP)
+### **1. Monitoreo de Recursos**
+En la parte superior del Dashboard, puedes ver estadísticas esenciales de rendimiento:
 
-El Teramont Control Panel (TCP) es un poderoso panel de control diseñado para la administración de servidores. Basado en el reconocido panel Pterodactyl y adaptado por Teramont Host para ofrecer una experiencia única y optimizada a nuestros usuarios.
+- **Uso de CPU:** Muestra el porcentaje de carga actual de la CPU en relación a los recursos asignados al servidor.
+- **Uso de RAM:** Proporciona una vista en tiempo real de la memoria utilizada frente a la memoria total asignada.
+- **Uso de Almacenamiento:** Indica el espacio usado y disponible en el almacenamiento asignado al servidor.
 
-Puedes acceder al TCP desde [panel.teramont.net](https://panel.teramont.net).
+---
 
-## Vistazo General del Servidor
+### **2. Detalles de Conexión SFTP**
+La conexión SFTP te permite administrar los archivos de tu servidor de manera segura. Los campos mostrados incluyen:
 
-En el Tablero de Teramont Control Panel (TCP), puedes obtener un vistazo general del estado y el rendimiento de tu servidor.
-
-### Uso de Recursos
-
-- **Uso de RAM**: Muestra el porcentaje de memoria RAM utilizada.
-- **Uso de CPU**: Indica el porcentaje de uso de la CPU.
-- **Uso de Almacenamiento**: Proporciona información sobre el espacio de almacenamiento utilizado.
-
-![Vistazo General del Servidor](../../static/tcp/dashboard/D9dsLN.png)
-
-## Detalles SFTP
-
-Para acceder al servidor a través de SFTP, puedes usar los siguientes detalles:
-
-- **Dirección del Servidor**: [Dirección del servidor]
-- **Nombre de Usuario**: [Nombre de usuario]
-- **Iniciar SFTP**: Esta función es compatible solo con WinSCP.
+- **Dirección del Servidor:** Dirección y puerto para conectarte a través de un cliente SFTP (ej. WinSCP).
+- **Nombre de Usuario:** El identificador único asignado a tu servidor.
+- **Contraseña:** La contraseña es la misma que utilizas para acceder al panel.
 
 :::info
-Asegúrate de usar WinSCP para iniciar sesión utilizando SFTP.
+Recomendamos usar el cliente **[WinSCP](https://winscp.net/eng/index.php)** para mayor compatibilidad y facilidad de uso.
 :::
 
-## Información del Servidor
+Para iniciar la conexión, haz clic en el botón "Launch SFTP (WinSCP)".
 
-- **Estado**: Indica si tu servidor está online o si está offline.
-- **Tiempo de Actividad**: Muestra el tiempo de actividad de tu servidor.
-- **Nombre del Host**: Muestra el nombre del host del servidor.
-- **Jugadores**: (Solo visible para servidores de juegos) Muestra la cantidad de jugadores conectados.
-- **IP del Servidor**: Dirección IP pública con la que podrás acceder a tu servidor.
-- **ID del Nodo**: Muestra el ID del nodo, ideal para proporcionarlo al pedir soporte.
-- **ID del Servidor**: Muestra el ID del servidor, ideal para proporcionarlo al pedir soporte.
+---
+
+### **3. Información del Servidor**
+Esta sección ofrece un resumen detallado del estado del servidor y otros datos clave:
+
+- **Estado:** Indica si el servidor está Online u Offline.
+- **Tiempo de Actividad (Uptime):** Tiempo total que el servidor lleva funcionando desde el último inicio.
+- **Nombre del Host:** Nombre del nodo o ubicación del servidor.
+- **Jugadores:** (En servidores de juegos) Muestra la cantidad de jugadores conectados en tiempo real.
+- **Versión:** Muestra la versión del software o del juego que corre el servidor.
+- **IP del Servidor:** Dirección IP pública utilizada para conectarse al servidor.
+- **ID del Nodo:** Identificador del nodo al que está asociado el servidor (útil para soporte técnico).
+- **ID del Servidor:** Identificador único del servidor, necesario para cualquier consulta de soporte.
+
+---
+
+## Uso Avanzado del Panel
+
+### **Monitorización Detallada**
+Además de los indicadores básicos, el Dashboard puede complementarse con gráficos históricos de uso de CPU, RAM y almacenamiento. Estos gráficos pueden ayudarte a identificar picos de rendimiento y ajustar recursos según sea necesario.
+
+---
+
+## Capturas de Pantalla
+
+A continuación, se incluye una vista previa del Dashboard para que los usuarios puedan familiarizarse con la interfaz.
+
+### Vista General:
+![Vista del Dashboard](../../static/tcp_assets/imgs/dashboard.png)
+
+---
+
+### **Consejos de Seguridad**
+- Nunca compartas tus credenciales de acceso o detalles de conexión SFTP.
+- Usa contraseñas seguras y cámbialas regularmente.
+- Limita el acceso a usuarios autorizados para evitar configuraciones no deseadas.

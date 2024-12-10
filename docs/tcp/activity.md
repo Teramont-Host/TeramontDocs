@@ -1,35 +1,110 @@
 ---
-title: Registro de actividad
-sidebar_label: Registro de actividad
+title: Teramont Control Panel (TCP)
+sidebar_label: Actividad
 ---
 
-### Sección de Actividad (Activity)
+## Registro de Actividad
 
-La sección de Actividad en el panel TCP es esencial para monitorear y auditar las acciones que se llevan a cabo en tu servidor. Aquí, puedes rastrear todas las operaciones realizadas, lo que es especialmente útil para identificar cambios recientes o para solucionar problemas.
+La pestaña **Actividad** permite a los usuarios monitorear todas las acciones realizadas tanto por ellos como por los subusuarios que tienen acceso al servidor. Este registro es útil para mantener un control detallado de los eventos ocurridos en el servidor y para auditorías de seguridad.
 
-:::info
-#### Características principales de la sección de Actividad:
+---
 
-- **Registro Completo**: Cada acción realizada en el servidor, ya sea un comando ejecutado en la consola o cualquier otra actividad, queda registrada en este apartado.
-  
-- **Fecha y Hora**: Cada registro muestra la fecha y hora exacta en que se realizó la acción, lo que permite tener un seguimiento temporal de los eventos.
+### **Acciones Registradas**
 
-- **Usuario**: Se identifica al usuario que realizó la acción, lo que es útil para saber quién hizo qué en el servidor.
+A continuación, se describen las principales acciones que serán registradas en esta sección:
 
-- **Descripción**: Una breve descripción de la acción realizada para entender rápidamente la naturaleza de la actividad.
+#### **Gestión del Servidor**
+- Arrancar el servidor.
+- Reiniciar el servidor.
+- Detener el servidor.
+- Forzar el cierre del servidor (Kill).
 
-:::
+#### **Uso de la Consola**
+- Ejecución de comandos desde la consola.
 
-:::tip
-#### Metadatos:
+#### **Gestión de Usuarios**
+- Creación de subusuarios.
+- Eliminación de subusuarios.
+- Edición de permisos de subusuarios.
 
-En algunos registros, verás un botón de metadatos. ![Metadatos](https://cdn.teramont.net/u/7mB8zQ.png) Al hacer clic en este botón, se desplegará una ventana con información adicional sobre la acción realizada. Esta información puede incluir detalles específicos del comando ejecutado, la IP desde la que se realizó la acción, entre otros datos relevantes.
+#### **Gestión de Archivos**
+- Visualización de archivos.
+- Edición de archivos.
+- Eliminación de archivos.
+- Creación de archivos.
+- Descarga de archivos.
+- Subida de archivos al contenedor.
 
-![Información Adicional](https://cdn.teramont.net/u/SufzeC.png)
+#### **Gestión de Bases de Datos**
+- Creación de bases de datos.
+- Eliminación de bases de datos.
+- Importación de bases de datos.
+- Exportación de bases de datos.
+- Acceso a herramientas como phpMyAdmin.
+- Rotación de contraseñas de las bases de datos.
 
-Estos metadatos son esenciales para obtener un entendimiento más profundo de las acciones específicas y pueden ser cruciales para la solución de problemas o auditorías.
-:::
+#### **Gestión de Respaldos**
+- Creación de respaldos.
+- Eliminación de respaldos.
+- Descarga de respaldos.
 
-:::caution
-Es importante revisar regularmente la sección de Actividad, especialmente si hay varios usuarios con acceso al servidor. Esto te permitirá mantener un control sobre las acciones realizadas y garantizar la integridad y seguridad de tu servidor.
-:::
+#### **Gestión de Puertos**
+- Apertura de puertos.
+- Eliminación de puertos.
+- Renombramiento de puertos.
+
+#### **Gestión de Subdominios**
+- Creación de subdominios.
+- Eliminación de subdominios.
+
+#### **Gestión de Proxys**
+- Creación de proxys.
+
+#### **Gestión de Tareas**
+- Creación de tareas programadas.
+- Edición de tareas programadas.
+- Eliminación de tareas programadas.
+
+#### **Gestión de Splits (Distribución de Recursos)**
+- Creación de splits.
+- Modificación de recursos de los servidores en splits.
+- Eliminación de splits.
+- Sincronización de usuarios en los splits.
+
+#### **Gestión del Servidor**
+- Cambio de tipo de servidor (Eggs).
+- Creación de reglas de firewall.
+- Eliminación de reglas de firewall.
+- Edición del comando de inicio (Startup Command).
+- Modificación de la RAM inicial.
+- Cambios en el nombre del archivo JAR del servidor.
+- Reinstalación del servidor.
+- Cambios en el nombre y descripción del servidor.
+- Cambio de imagen del Docker.
+- Actualización de la versión del servidor.
+
+#### **Otras Acciones**
+- Uso de herramientas como el Importer.
+
+---
+
+### **Vista del Registro**
+
+El registro muestra un listado cronológico de las acciones realizadas. Cada entrada incluye:
+- **Usuario:** La persona o subusuario que realizó la acción.
+- **Acción:** Una descripción breve de lo que ocurrió.
+- **Hora:** El tiempo exacto en que ocurrió la acción.
+- **Ubicación:** (Si aplica) Información geográfica de donde se realizó la acción.
+
+![Registro de Actividad](../../static/tcp_assets/imgs/logs.png)
+
+---
+
+### **Importancia del Registro de Actividad**
+
+Esta herramienta permite:
+- Realizar auditorías detalladas del uso del servidor.
+- Identificar posibles problemas o usos indebidos.
+- Garantizar la seguridad y trazabilidad de las acciones realizadas.
+
+---
