@@ -7,7 +7,9 @@ sidebar_label: Splitter
 
 El **Splitter de Servidores** en el Teramont Control Panel (TCP) permite dividir un servidor principal en subservidores. Esto es útil para distribuir recursos entre diferentes entornos o configuraciones, facilitando la administración y optimización de un único servidor.
 
-:::info ¡Necesitas un plan Extreme+ de 32 GB o planes performance para poder utilizar el Server Splitter!:::
+:::info 
+¡Necesitas un plan Extreme+ de 32 GB o planes performance para poder utilizar el Server Splitter!
+:::
 
 ---
 

@@ -68,5 +68,5 @@ Imagina que tienes un servidor con múltiples servicios:
 - Puerto principal para el juego: **19131**
 - Puerto secundario para ItemsAdder: **25590**
 
-Con el apartado de red del TCP, puedes gestionar estas asignaciones fácilmente, asegurándote de que cada servicio opere en su puerto designado.
 ---
+### **Con el apartado de red del TCP, puedes gestionar estas asignaciones fácilmente, asegurándote de que cada servicio opere en su puerto designado.**
