@@ -11,6 +11,7 @@ A continuación, te presentamos una guía visual de los controles básicos que e
 
 :::info
 **Descripción de los controles:**
+:::
 
 1. **Uso del CPU**: Muestra en tiempo real el consumo de CPU de tu servidor.
 2. **Uso de RAM**: Indica en tiempo real la memoria RAM utilizada por tu servidor.
@@ -19,7 +20,6 @@ A continuación, te presentamos una guía visual de los controles básicos que e
 5. **Limpiar consola**: Este botón te permite limpiar la consola para una mejor visualización.
 6. **Copiar registros**: Este botón te permite copiar las últimas líneas de la consola a [mclo.gs](https://mclo.gs) de forma automática.
 7. **Expandir consola**: Este botón te permite abrir la consola en una pestaña nueva.
-   :::
 
 ---
 
@@ -27,13 +27,13 @@ A continuación, te presentamos una guía visual de los controles básicos que e
 
 :::info
 **⚠️ Esta sección siempre está visible en el panel ⚠️**
+:::
 
 **Descripción de los controles:**
 
 8. **Iniciar servidor**: Utiliza este botón para encender tu servidor.
 9. **Reiniciar servidor**: Permite reiniciar tu servidor.
 10. **Apagar/Forzar cierre**: Utiliza este botón para apagar o forzar el cierre de tu servidor.
-    :::
 
 ---
 
@@ -43,7 +43,9 @@ En la sección inferior del Dashboard, puedes encontrar gráficos avanzados que 
 
 ![Gráficos de Estadísticas Avanzadas](../../static/tcp_assets/imgs/console2.png)
 
-### **Descripción de los puntos 11, 12 y 13:**
+:::info
+**Descripción de los puntos 11, 12 y 13:**
+:::
 
 11. **Gráfico de uso del CPU**:
     - Este gráfico muestra el uso de la CPU en intervalos de tiempo específicos.
