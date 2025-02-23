@@ -1,0 +1,41 @@
+name: Sync & Build Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync_and_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          eval $(ssh-agent -s)
+          echo "${{ secrets.SSH_PASSPHRASE }}" | ssh-add ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+
+      - name: Sync files to server
+        run: rsync -avz --exclude 'node_modules' --exclude '.git' ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/teramont-docs
+
+      - name: Build Documentation
+        run: |
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            export NVM_DIR="/root/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            export PATH="/root/.nvm/versions/node/v18.17.1/bin:$PATH"
+            
+            cd /var/www/teramont-docs
+            echo "📦 Installing dependencies..."
+            npm install
+            
+            echo "🛠️ Running build..."
+            npm run build
+            echo "🚀 Build complete!"
+          EOF
