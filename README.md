@@ -1,4 +1,4 @@
-![Teramont Logo](https://cdn.teramont.net/u/oC3myP.png)
+![Teramont Logo](https://cdn.teramont.net/u/oC3myP.png) 
 
 # 👋 ¡Bienvenido(a)!
 ¡Esta es la documentación mantenida por la comunidad para [Teramont Host](https://www.teramont.net)!
