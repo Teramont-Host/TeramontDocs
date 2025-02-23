@@ -18,7 +18,10 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           eval $(ssh-agent -s)
-          ssh-add ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PASSPHRASE }}" > ~/.ssh/ssh_passphrase
+          chmod 600 ~/.ssh/ssh_passphrase
+          export SSH_ASKPASS=~/.ssh/ssh_passphrase
+          setsid ssh-add ~/.ssh/id_rsa < /dev/null
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Test SSH Connection
