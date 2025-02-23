@@ -21,6 +21,9 @@ jobs:
           ssh-add ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
+      - name: Test SSH Connection
+        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo SSH connection successful"
+
       - name: Sync files to server
         run: rsync -avz --exclude 'node_modules' --exclude '.git' ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/teramont-docs
 
