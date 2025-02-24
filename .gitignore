@@ -4,6 +4,9 @@
 .npm
 .config
 
+# IDE Data
+/.idea
+
 # production
 /build
 
