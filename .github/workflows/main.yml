@@ -1,4 +1,4 @@
-name: Sync & Build Docs
+name: Deploy Teramont Docs
 
 on:
   push:
@@ -6,60 +6,40 @@ on:
       - main
 
 jobs:
-  build_and_deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
-
-      - name: Verify repository files
-        run: ls -la  # Verifica que los archivos estén en el runner
-
-      - name: Install dependencies
-        run: npm ci || npm install --legacy-peer-deps
-
-      - name: Build Documentation
-        run: npm run build
-
       - name: Configure SSH
-        if: success()
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Test SSH Connection
-        if: success()
-        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo SSH connection successful"
-
       - name: Sync files to server
-        if: success()
         run: rsync -avz --exclude 'node_modules' --exclude '.git' ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/teramont-docs
 
-      - name: Run build on server
-        if: success()
+      - name: Build on Server
         run: |
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            export NVM_DIR="/root/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-            export PATH="/root/.nvm/versions/node/v18.17.1/bin:$PATH"
-            
+            export PATH=$PATH:/root/.nvm/versions/node/v18.19.0/bin
             cd /var/www/teramont-docs
-            echo "📦 Installing dependencies..."
-            npm ci || npm install --legacy-peer-deps
             
-            echo "🛠️ Running build..."
+            echo "🔧 Setting up Node.js..."
+            nvm use v18.19.0
+            
+            echo "📦 Installing dependencies..."
+            npm install --legacy-peer-deps
+            
+            echo "🧪 Testing build..."
             if npm run build; then
-              echo "🚀 Build complete!"
+              echo "✅ Build successful! Deploying..."
+              echo "🚀 Deployment complete!"
             else
-              echo "❌ Build failed! Deployment aborted."
+              echo "❌ Build failed! Aborting deployment."
               exit 1
             fi
           EOF
