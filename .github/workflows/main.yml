@@ -18,8 +18,11 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: Verify repository files
+        run: ls -la  # Verifica que los archivos estén en el runner
+
       - name: Install dependencies
-        run: npm install
+        run: npm ci || npm install --legacy-peer-deps
 
       - name: Build Documentation
         run: npm run build
@@ -50,7 +53,7 @@ jobs:
             
             cd /var/www/teramont-docs
             echo "📦 Installing dependencies..."
-            npm install
+            npm ci || npm install --legacy-peer-deps
             
             echo "🛠️ Running build..."
             if npm run build; then
