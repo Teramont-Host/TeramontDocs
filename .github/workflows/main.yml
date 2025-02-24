@@ -1,4 +1,4 @@
-name: Deploy Teramont Docs
+name: Sync & Build Docs
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  sync_and_build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -19,27 +19,26 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
+      - name: Test SSH Connection
+        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo SSH connection successful"
+
       - name: Sync files to server
         run: rsync -avz --exclude 'node_modules' --exclude '.git' ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/teramont-docs
 
-      - name: Build on Server
+      - name: Build Documentation
         run: |
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
-            export PATH=$PATH:/root/.nvm/versions/node/v18.19.0/bin
+            export NVM_DIR="/root/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+            export PATH="/root/.nvm/versions/node/v18.17.1/bin:$PATH"
+            
             cd /var/www/teramont-docs
-            
-            echo "🔧 Setting up Node.js..."
-            nvm use v18.19.0
-            
             echo "📦 Installing dependencies..."
-            npm install --legacy-peer-deps
+            npm install
             
-            echo "🧪 Testing build..."
-            if npm run build; then
-              echo "✅ Build successful! Deploying..."
-              echo "🚀 Deployment complete!"
-            else
-              echo "❌ Build failed! Aborting deployment."
-              exit 1
-            fi
+            echo "🛠️ Running build..."
+            npm run build
+            echo "🚀 Build complete!"
           EOF
+
+
