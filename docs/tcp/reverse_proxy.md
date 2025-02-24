@@ -24,9 +24,9 @@ Para configurar un proxy inverso, sigue estos pasos:
    - **SSL CERTIFICATE**: Tu certificado SSL.
    - **SSL KEY**: La clave de tu certificado SSL.
 
-   :::tip
-   Se recomienda usar CloudFlare para generar certificados SSL de origen, ya que proporciona una capa adicional de seguridad y es fácil de configurar.
-   :::
+:::tip
+Se recomienda usar CloudFlare para generar certificados SSL de origen, ya que proporciona una capa adicional de seguridad y es fácil de configurar.
+:::
 
 4. Una vez que hayas completado todos los campos necesarios, tu proxy se creará y aparecerá en la lista de proxies. Ahora podrás acceder a tu servidor usando el dominio o subdominio que especificaste, como se muestra en la siguiente imagen.
    ![Proxy Creado](https://cdn.teramont.net/u/xOtExG.png)
