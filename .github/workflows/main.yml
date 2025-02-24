@@ -6,26 +6,13 @@ on:
       - main
 
 jobs:
-  build_and_deploy:
+  sync_and_build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Documentation
-        run: npm run build
-
       - name: Configure SSH
-        if: success()
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
@@ -33,15 +20,12 @@ jobs:
           ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
       - name: Test SSH Connection
-        if: success()
         run: ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} "echo SSH connection successful"
 
       - name: Sync files to server
-        if: success()
         run: rsync -avz --exclude 'node_modules' --exclude '.git' ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:/var/www/teramont-docs
 
-      - name: Run build on server
-        if: success()
+      - name: Build Documentation
         run: |
           ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
             export NVM_DIR="/root/.nvm"
@@ -53,10 +37,8 @@ jobs:
             npm install
             
             echo "🛠️ Running build..."
-            if npm run build; then
-              echo "🚀 Build complete!"
-            else
-              echo "❌ Build failed! Deployment aborted."
-              exit 1
-            fi
+            npm run build
+            echo "🚀 Build complete!"
           EOF
+
+
