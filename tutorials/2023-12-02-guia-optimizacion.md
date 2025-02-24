@@ -610,4 +610,3 @@ Paper ofrece un comando `/mspt` que te dirá cuánto tiempo tardó el servidor e
 ### Timings
 
 Timings es una herramienta que te permite ver qué tareas están tomando más tiempo. Ejecuta el comando `/timings paste` para obtener Timings y comparte el enlace con otros para obtener ayuda. Ten en cuenta que Timings tiene un impacto en el rendimiento, considera usar Spark en su lugar. Hay un [tutorial en video de Aikar](https://www.youtube.com/watch?v=T4J0A9l7bfQ) detallado sobre cómo leerlos.
-
