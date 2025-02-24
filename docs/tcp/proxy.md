@@ -31,9 +31,9 @@ La sección de Proxy en el panel TCP ofrece una funcionalidad avanzada para la c
     - **Habilitar SSL**: Activa esta opción si deseas que tu proxy funcione sobre una conexión segura.
     - **Lets Encrypt**: Genera automáticamente un certificado SSL para tu proxy. Si usas tu propio SSL, deberás proporcionar el certificado y la clave.
 
-   :::tip
-   Si estás utilizando **CloudFlare**, puedes configurar certificados SSL de origen para mejorar la seguridad.
-   :::
+:::tip
+Si estás utilizando **CloudFlare**, puedes configurar certificados SSL de origen para mejorar la seguridad.
+:::
 
 3. **Finalizar configuración**:
     - Presiona **Create** para guardar los cambios. Ahora, tu proxy estará disponible y podrás acceder a tu servidor utilizando el dominio o subdominio configurado.
