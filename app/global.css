@@ -46,3 +46,8 @@
   background-color: color-mix(in srgb, #1b191f 30%, transparent);
   backdrop-filter: blur(15px);
 }
+
+.backdrop {
+  background-color: color-mix(in srgb, #1b191f 30%, transparent);
+  backdrop-filter: blur(15px);
+}
