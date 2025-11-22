@@ -40,3 +40,9 @@
   --color-fd-accent-foreground: hsl(0, 0%, 100%);
   --color-fd-ring: hsl(0, 0%, 34.9%);
 }
+
+
+.bg-fd-card {
+  background-color: color-mix(in srgb, #1b191f 30%, transparent);
+  backdrop-filter: blur(15px);
+}
