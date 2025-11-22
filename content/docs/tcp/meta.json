@@ -1,5 +1,11 @@
 {
   "title": "TCP",
   "description": "Teramont Control Panel",
-  "root": true
+  "root": true,
+  "pages": [
+    "---Introducción a TCP---",
+    "index",
+    "servicios-disponibles",
+    "---Cuenta---"
+  ]
 }

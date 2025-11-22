@@ -1,0 +1,11 @@
+{
+  "title": "Facturación",
+  "description": "Panel de facturación",
+  "root": true,
+  "pages": [
+    "---Introducción a Facturación---",
+    "index",
+    "---Cuenta---",
+    "actualizar-informacion-personal"
+  ]
+}
