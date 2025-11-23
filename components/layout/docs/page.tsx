@@ -60,7 +60,9 @@ export function PageArticle(props: ComponentProps<'article'>) {
     <article
       {...props}
       className={cn(
-        'flex min-w-0 w-full flex-col gap-4 pt-8 px-4 md:px-6 md:mx-auto',
+        'flex min-w-0 w-full flex-col gap-4 pt-8 px-4 md:px-6 md:mx-auto pb-6 mb-6 mt-4',
+        'bg-background/90 backdrop-blur-sm rounded-2xl border shadow-lg',
+        'max-w-none xl:max-w-[calc(100%-50px)]',
         props.className,
       )}
     >

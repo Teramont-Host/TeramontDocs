@@ -161,21 +161,23 @@ export function DocsPage({
             </PageTOCPopoverContent>
           </PageTOCPopover>
         ))}
-      <PageArticle {...article}>
-        {breadcrumbEnabled &&
-          (breadcrumb ?? <PageBreadcrumb {...breadcrumbProps} />)}
-        {children}
-        <div className="flex flex-row flex-wrap items-center justify-between gap-4 empty:hidden">
-          {editOnGithub && (
-            <EditOnGitHub
-              href={`https://github.com/${editOnGithub.owner}/${editOnGithub.repo}/blob/${editOnGithub.sha}/${editOnGithub.path.startsWith('/') ? editOnGithub.path.slice(1) : editOnGithub.path}`}
-            />
-          )}
-          {lastUpdate && <PageLastUpdate date={new Date(lastUpdate)} />}
-        </div>
+      <div className="w-full">
+        <PageArticle {...article}>
+          {breadcrumbEnabled &&
+            (breadcrumb ?? <PageBreadcrumb {...breadcrumbProps} />)}
+          {children}
+          <div className="flex flex-row flex-wrap items-center justify-between gap-4 empty:hidden">
+            {editOnGithub && (
+              <EditOnGitHub
+                href={`https://github.com/${editOnGithub.owner}/${editOnGithub.repo}/blob/${editOnGithub.sha}/${editOnGithub.path.startsWith('/') ? editOnGithub.path.slice(1) : editOnGithub.path}`}
+              />
+            )}
+            {lastUpdate && <PageLastUpdate date={new Date(lastUpdate)} />}
+          </div>
+        </PageArticle>
         {footer.enabled !== false &&
           (footer.component ?? <PageFooter items={footer.items} />)}
-      </PageArticle>
+      </div>
       {tocEnabled &&
         (tocReplace ?? (
           <PageTOC>
